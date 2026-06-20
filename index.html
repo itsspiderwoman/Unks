@@ -16,10 +16,9 @@
 body{
     background: linear-gradient(to bottom, #0a0a0a, #1c1c1c);
     color:white;
-    overflow-x:hidden;
 }
 
-/* Hero Section */
+/* HERO */
 .hero{
     height:100vh;
     display:flex;
@@ -36,7 +35,6 @@ body{
     background-position:center;
     background-repeat:no-repeat;
 }
-}
 
 .hero h1{
     font-size:5rem;
@@ -46,11 +44,11 @@ body{
 
 .hero p{
     font-size:1.3rem;
-    max-width:700px;
     margin-top:20px;
     color:#ddd;
 }
 
+/* BUTTON */
 .btn{
     margin-top:30px;
     padding:15px 35px;
@@ -60,14 +58,9 @@ body{
     border-radius:30px;
     font-weight:bold;
     cursor:pointer;
-    transition:.3s;
 }
 
-.btn:hover{
-    transform:scale(1.1);
-}
-
-/* About */
+/* SECTION */
 .section{
     padding:80px 10%;
 }
@@ -79,10 +72,16 @@ body{
     margin-bottom:40px;
 }
 
+/* CARDS */
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
+}
+
+.card-link{
+    text-decoration:none;
+    color:white;
 }
 
 .card{
@@ -101,10 +100,9 @@ body{
 
 .card h3{
     color:#ffd700;
-    margin-bottom:10px;
 }
 
-/* Quote Section */
+/* QUOTE */
 .quote{
     text-align:center;
     padding:100px 20px;
@@ -112,14 +110,14 @@ body{
 }
 
 .quote h2{
-    font-size:2.5rem;
     color:silver;
+    font-size:2rem;
 }
 
-/* Footer */
+/* FOOTER */
 footer{
     text-align:center;
-    padding:25px;
+    padding:20px;
     background:#111;
     color:#aaa;
 }
@@ -130,11 +128,9 @@ footer{
 
 <section class="hero">
     <h1>UNKS</h1>
-    <p>
-        TAP IN TO GET TO KNOW WHO UNKS TRULY IS
-    </p>
+    <p>TAP IN TO SEE WHO UNKS TRULY IS</p>
 
-    <button class="btn" onclick="showMessage()">
+    <button class="btn" onclick="location.href='strength.html'">
         ENTER HIS LIFESTYLE
     </button>
 </section>
@@ -144,49 +140,37 @@ footer{
 
     <div class="cards">
 
-        <div class="card">
-            <h3>🌌 Cosmic Mindset</h3>
-            <p>
-                Focus beyond limits. Stay calm under pressure
-                and keep moving forward.
-            </p>
-        </div>
+        <a href="cosmic.html" class="card-link">
+            <div class="card">
+                <h3>🌌 Cosmic Mindset</h3>
+                <p>Tap to enter</p>
+            </div>
+        </a>
 
-        <div class="card">
-            <h3>🦇 Dark Knight Discipline</h3>
-            <p>
-                Early mornings. Hard work. No excuses.
-                Discipline creates champions.
-            </p>
-        </div>
+        <a href="discipline.html" class="card-link">
+            <div class="card">
+                <h3>🦇 Dark Knight Discipline</h3>
+                <p>Tap to enter</p>
+            </div>
+        </a>
 
-        <div class="card">
-            <h3>🏋️ Strength Training</h3>
-            <p>
-                Heavy lifts, strong body, strong mind.
-                Progress every week.
-            </p>
-        </div>
+        <a href="strength.html" class="card-link">
+            <div class="card">
+                <h3>🏋️ Strength Training</h3>
+                <p>Tap to enter</p>
+            </div>
+        </a>
 
     </div>
 </section>
 
 <section class="quote">
-    <h2>
-        "Strength isn't given. It's earned every rep, every set,
-        every day."
-    </h2>
+    <h2>"Strength isn't given. It's earned every rep, every set, every day."</h2>
 </section>
 
 <footer>
-    © 2026 UNKS | Strength Beyond Limits
+    © 2026 UNKS
 </footer>
-
-<script>
-function showMessage(){
-    alert("Welcome to UNKS' Universe!");
-}
-</script>
 
 </body>
 </html>
